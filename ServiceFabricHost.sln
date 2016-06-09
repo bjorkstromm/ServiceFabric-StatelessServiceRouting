@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "ServiceFabricHost", "ServiceFabricHost\ServiceFabricHost.sfproj", "{BA6FFF71-1279-45BF-99C1-A420E0B5EC9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatelessAware", "StatelessAware\StatelessAware.csproj", "{4B661EE4-08D8-4DA1-BEC1-7561B1BD64EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA6FFF71-1279-45BF-99C1-A420E0B5EC9D}.Debug|x64.ActiveCfg = Debug|x64
+		{BA6FFF71-1279-45BF-99C1-A420E0B5EC9D}.Debug|x64.Build.0 = Debug|x64
+		{BA6FFF71-1279-45BF-99C1-A420E0B5EC9D}.Debug|x64.Deploy.0 = Debug|x64
+		{BA6FFF71-1279-45BF-99C1-A420E0B5EC9D}.Release|x64.ActiveCfg = Release|x64
+		{BA6FFF71-1279-45BF-99C1-A420E0B5EC9D}.Release|x64.Build.0 = Release|x64
+		{BA6FFF71-1279-45BF-99C1-A420E0B5EC9D}.Release|x64.Deploy.0 = Release|x64
+		{4B661EE4-08D8-4DA1-BEC1-7561B1BD64EC}.Debug|x64.ActiveCfg = Debug|x64
+		{4B661EE4-08D8-4DA1-BEC1-7561B1BD64EC}.Debug|x64.Build.0 = Debug|x64
+		{4B661EE4-08D8-4DA1-BEC1-7561B1BD64EC}.Release|x64.ActiveCfg = Release|x64
+		{4B661EE4-08D8-4DA1-BEC1-7561B1BD64EC}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
