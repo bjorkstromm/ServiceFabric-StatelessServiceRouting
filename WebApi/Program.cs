@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Threading;
 using Microsoft.ServiceFabric.Services.Runtime;
 
-namespace WebSocketServerService
+namespace WebApi
 {
     internal static class Program
     {
@@ -19,10 +19,10 @@ namespace WebSocketServerService
                 // When Service Fabric creates an instance of this service type,
                 // an instance of the class is created in this host process.
 
-                ServiceRuntime.RegisterServiceAsync("WebSocketServerServiceType",
-                    context => new WebSocketServerService(context)).GetAwaiter().GetResult();
+                ServiceRuntime.RegisterServiceAsync("WebApiType",
+                    context => new WebApi(context)).GetAwaiter().GetResult();
 
-                ServiceEventSource.Current.ServiceTypeRegistered(Process.GetCurrentProcess().Id, typeof(WebSocketServerService).Name);
+                ServiceEventSource.Current.ServiceTypeRegistered(Process.GetCurrentProcess().Id, typeof(WebApi).Name);
 
                 // Prevents this host process from terminating so services keep running.
                 Thread.Sleep(Timeout.Infinite);
